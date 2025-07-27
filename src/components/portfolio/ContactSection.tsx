@@ -38,8 +38,8 @@ const ContactSection = () => {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+1 (437) 439-5533',
+      href: 'tel:+4374395533',
       color: 'text-accent-foreground'
     },
     {
@@ -55,26 +55,14 @@ const ContactSection = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/alexthompson',
+      href: 'https://github.com/SADIK112',
       color: 'hover:text-foreground'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/alexthompson',
+      href: 'https://www.linkedin.com/in/sadikur-rahman1/',
       color: 'hover:text-blue-600'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/alexthompson',
-      color: 'hover:text-blue-400'
-    },
-    {
-      icon: MessageCircle,
-      label: 'Discord',
-      href: 'https://discord.com/users/alexthompson',
-      color: 'hover:text-purple-500'
     }
   ];
 
@@ -151,7 +139,7 @@ const ContactSection = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className={cn(
-            "text-fluid-3xl font-bold text-foreground mb-4",
+            "text-fluid-3xl font-bold text-foreground mb-4 text-3xl",
             isVisible && "animate-slide-up-fade"
           )}>
             Let's Create Something Amazing
@@ -161,7 +149,7 @@ const ContactSection = () => {
             isVisible && "animate-draw-line"
           )} />
           <p className={cn(
-            "text-fluid-lg text-muted-foreground max-w-2xl mx-auto",
+            "text-fluid-lg text-muted-foreground max-w-2xl mx-auto text-lg",
             isVisible && "animate-slide-up-fade"
           )} style={{ animationDelay: '0.2s' }}>
             Ready to bring your vision to life? I'd love to hear about your project and explore how we can work together.
