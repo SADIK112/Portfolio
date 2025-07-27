@@ -50,7 +50,6 @@ This portfolio embodies my approach to development:
 
 This portfolio is an evolving project where I:
 - Implement new web technologies and best practices
-- Refine the user experience based on feedback
 - Update content to reflect my growing skills and experience
 - Experiment with innovative design patterns
 
@@ -58,8 +57,8 @@ This portfolio is an evolving project where I:
 
 I'm always open to interesting opportunities and conversations about technology and innovation. Feel free to reach out through any of these channels:
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **LinkedIn**: [Connect with me](https://linkedin.com/in/yourprofile)
+- **Email**: [your.email@example.com](mailto:sadikur.ca.rahman@gmail.com)
+- **LinkedIn**: [Connect with me](https://www.linkedin.com/in/sadikur-rahman1)
 - **GitHub**: [@SADIK112](https://github.com/SADIK112)
 
 ---
