@@ -57,10 +57,10 @@ This portfolio is an evolving project where I:
 
 I'm always open to interesting opportunities and conversations about technology and innovation. Feel free to reach out through any of these channels:
 
-- **Email**: [your.email@example.com](mailto:sadikur.ca.rahman@gmail.com)
+- **Email**: [sadikur.ca.rahman@gmail.com](mailto:sadikur.ca.rahman@gmail.com)
 - **LinkedIn**: [Connect with me](https://www.linkedin.com/in/sadikur-rahman1)
 - **GitHub**: [@SADIK112](https://github.com/SADIK112)
-
+ß
 ---
 
 Crafted with passion and attention to detail by Sadikur Rahman
