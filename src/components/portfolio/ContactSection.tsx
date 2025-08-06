@@ -354,6 +354,54 @@ const ContactSection = () => {
                 I believe every project is an opportunity to create something meaningful. Whether you're a startup with a bold vision or an established company looking to innovate, I'm here to help bring your ideas to life with passion and precision.
               </p>
             </div>
+
+            {/* Agency Services */}
+            <div className={cn(
+              "p-8 rounded-3xl shadow-soft paper-texture bg-card border border-border/50",
+              isVisible && "animate-organic-entrance"
+            )} style={{ animationDelay: '0.8s' }}>
+              <h3 className="text-2xl font-semibold text-foreground mb-4">My Digital Services</h3>
+              
+              <p className="text-card-foreground leading-relaxed mb-6">
+                Looking for a complete digital solution for your business? I also run a agency specializes in:
+              </p>
+              
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>Search Engine Optimization (SEO)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>Custom Web Development</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>Shopify Store Development</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>E-commerce Solutions</span>
+                </li>
+              </ul>
+              
+              <a 
+                href="https://digistudiohub.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-primary hover:text-primary/80 transition-colors duration-300 group"
+              >
+                Visit My Agency
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform duration-300" 
+                  viewBox="0 0 20 20" 
+                  fill="currentColor"
+                >
+                  <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
