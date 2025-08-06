@@ -1,124 +1,31 @@
 import { useState, useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
-import { ExternalLink, Github, Play, ArrowRight, Sparkles } from 'lucide-react';
-
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  longDescription: string;
-  image: string;
-  tech: string[];
-  liveUrl: string;
-  githubUrl: string;
-  featured: boolean;
-  category: 'web' | 'mobile' | 'fullstack';
-}
+import { ExternalLink, Github, Sparkles, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Project, projects } from '@/data/projects';
 
 const ProjectsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [filter, setFilter] = useState<'all' | 'web' | 'mobile' | 'fullstack'>('all');
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const projects: Project[] = [
-    {
-      id: 'ecommerce-platform',
-      title: 'EcoCommerce Platform',
-      description: 'Sustainable e-commerce platform with carbon footprint tracking',
-      longDescription: 'A full-featured e-commerce platform focused on sustainability, featuring real-time carbon footprint calculation, eco-friendly product recommendations, and integrated offset programs.',
-      image: '/api/placeholder/600/400',
-      tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
-      liveUrl: 'https://eco-commerce-demo.com',
-      githubUrl: 'https://github.com/example/eco-commerce',
-      featured: true,
-      category: 'fullstack'
-    },
-    {
-      id: 'task-manager',
-      title: 'Zen Task Manager',
-      description: 'Mindful productivity app with natural themes and focus modes',
-      longDescription: 'A beautiful task management application that promotes mindful productivity through natural themes, breathing exercises, and distraction-free focus modes.',
-      image: '/api/placeholder/600/400',
-      tech: ['Vue.js', 'TypeScript', 'Supabase', 'Tailwind'],
-      liveUrl: 'https://zen-tasks-demo.com',
-      githubUrl: 'https://github.com/example/zen-tasks',
-      featured: true,
-      category: 'web'
-    },
-    {
-      id: 'fitness-tracker',
-      title: 'Nature Fitness Tracker',
-      description: 'Outdoor fitness tracking with environmental awareness',
-      longDescription: 'Mobile fitness application that encourages outdoor activities while providing environmental data about workout locations.',
-      image: '/api/placeholder/600/400',
-      tech: ['React Native', 'Firebase', 'Maps API', 'TensorFlow'],
-      liveUrl: 'https://nature-fitness-demo.com',
-      githubUrl: 'https://github.com/example/nature-fitness',
-      featured: false,
-      category: 'mobile'
-    },
-    {
-      id: 'design-system',
-      title: 'Organic Design System',
-      description: 'Component library inspired by natural forms and movements',
-      longDescription: 'A comprehensive design system and component library featuring organic animations, natural color palettes, and accessibility-first components.',
-      image: '/api/placeholder/600/400',
-      tech: ['React', 'Storybook', 'TypeScript', 'CSS-in-JS'],
-      liveUrl: 'https://organic-design-system.com',
-      githubUrl: 'https://github.com/example/organic-design',
-      featured: false,
-      category: 'web'
-    },
-    {
-      id: 'weather-app',
-      title: 'Mindful Weather',
-      description: 'Weather app with meditation suggestions based on conditions',
-      longDescription: 'Weather application that suggests mindfulness activities and meditations based on current weather conditions and seasonal changes.',
-      image: '/api/placeholder/600/400',
-      tech: ['Next.js', 'Weather API', 'Framer Motion', 'Tailwind'],
-      liveUrl: 'https://mindful-weather-demo.com',
-      githubUrl: 'https://github.com/example/mindful-weather',
-      featured: false,
-      category: 'web'
-    },
-    {
-      id: 'budget-tracker',
-      title: 'Green Budget Tracker',
-      description: 'Personal finance with sustainability scoring',
-      longDescription: 'Budget tracking application that scores purchases based on environmental impact and suggests sustainable alternatives.',
-      image: '/api/placeholder/600/400',
-      tech: ['React', 'Python', 'ML APIs', 'Chart.js'],
-      liveUrl: 'https://green-budget-demo.com',
-      githubUrl: 'https://github.com/example/green-budget',
-      featured: true,
-      category: 'fullstack'
-    }
-  ];
-
   const filters = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'web', label: 'Web Apps' },
-    { id: 'mobile', label: 'Mobile' },
-    { id: 'fullstack', label: 'Full-Stack' }
+    { id: 'all' as const, label: 'All Projects' },
+    { id: 'web' as const, label: 'Web Apps' },
+    { id: 'mobile' as const, label: 'Mobile' },
+    { id: 'fullstack' as const, label: 'Full-Stack' }
   ];
 
-  const filteredProjects = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+  const filteredProjects = filter === 'all' 
+    ? projects 
+    : projects.filter(p => p.category === filter);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
+      ([entry]) => entry.isIntersecting && setIsVisible(true),
       { threshold: 0.2 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
@@ -126,9 +33,10 @@ const ProjectsSection = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-      <div
+      <Link
+        to={`/projects/${project.id}`}
         className={cn(
-          "group relative overflow-hidden rounded-3xl shadow-soft transition-all duration-500 hover-lift cursor-pointer",
+          "group relative block overflow-hidden rounded-3xl shadow-soft transition-all duration-500 hover-lift",
           "bg-card border border-border/50 paper-texture",
           project.featured && "md:col-span-2",
           isVisible && "animate-organic-entrance"
@@ -136,7 +44,6 @@ const ProjectsSection = () => {
         style={{ animationDelay: `${0.4 + index * 0.1}s` }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        onClick={() => setSelectedProject(project)}
       >
         {/* Project image */}
         <div className="aspect-video relative overflow-hidden">
@@ -186,6 +93,14 @@ const ProjectsSection = () => {
             >
               <Github className="w-4 h-4 text-foreground" />
             </a>
+            <button
+              onClick={() => navigate(`/projects/${project.id}`)}
+              className="w-10 h-10 bg-background/90 rounded-full flex items-center justify-center hover:bg-background transition-colors duration-200"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </button>
           </div>
         </div>
 
@@ -254,36 +169,43 @@ const ProjectsSection = () => {
     <section 
       id="projects" 
       ref={sectionRef}
-      className="py-20 px-6 bg-gradient-warm relative overflow-hidden"
+      className="py-20 px-6 bg-background relative overflow-hidden"
     >
-      {/* Background elements */}
-      <div className="absolute inset-0 opacity-20">
-        {[...Array(15)].map((_, i) => (
-          <div
-            key={i}
-            className={cn(
-              "absolute animate-drift",
-              i % 5 === 0 ? "w-3 h-3 bg-primary/20 rounded-full" :
-              i % 5 === 1 ? "w-2 h-6 bg-accent/20 rounded-full" :
-              i % 5 === 2 ? "w-6 h-2 bg-sage/20 rounded-full" :
-              i % 5 === 3 ? "w-4 h-4 bg-muted/20 rounded-full" :
-              "w-1 h-8 bg-primary/10 rounded-full"
-            )}
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${i * 0.5}s`,
-              animationDuration: `${15 + (i % 5) * 3}s`
-            }}
-          />
-        ))}
-      </div>
-
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* Section header */}
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className={cn(
-            "text-fluid-3xl font-bold text-foreground mb-4",
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Featured Projects
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            A selection of my recent work. Each project represents a unique challenge and solution.
+          </p>
+        </div>
+
+        {/* Filters */}
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          {filters.map((f) => (
+            <button
+              key={f.id}
+              onClick={() => setFilter(f.id)}
+              className={cn(
+                'px-4 py-2 text-sm font-medium rounded-full transition-colors',
+                filter === f.id
+                  ? 'bg-primary text-primary-foreground'
+                  : 'text-muted-foreground hover:text-foreground'
+              )}
+            >
+              {f.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Projects grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {filteredProjects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
+          ))}
+        </div>
+      </div>
             isVisible && "animate-slide-up-fade"
           )}>
             Featured Projects

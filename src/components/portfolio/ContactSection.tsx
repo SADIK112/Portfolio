@@ -5,10 +5,6 @@ import {
   Phone, 
   MapPin, 
   Send,
-  Github,
-  Linkedin,
-  Twitter,
-  MessageCircle,
   Heart,
   CheckCircle
 } from 'lucide-react';
@@ -30,9 +26,16 @@ const ContactSection = () => {
   const contactMethods = [
     {
       icon: Mail,
-      label: 'Email',
+      label: 'Personal Email',
       value: 'sadikur.ca.rahman@gmail.com',
       href: 'mailto:sadikur.ca.rahman@gmail.com',
+      color: 'text-primary'
+    },
+    {
+      icon: Mail,
+      label: 'Work Email',
+      value: 'sadikur.rahman@bevycommerce.com',
+      href: 'mailto:sadikur.rahman@bevycommerce.com',
       color: 'text-primary'
     },
     {
@@ -48,21 +51,6 @@ const ContactSection = () => {
       value: 'Ontario, Canada',
       href: 'https://maps.google.com/?q=Ontario,Canada',
       color: 'text-sage-hover'
-    }
-  ];
-
-  const socialLinks = [
-    {
-      icon: Github,
-      label: 'GitHub',
-      href: 'https://github.com/SADIK112',
-      color: 'hover:text-foreground'
-    },
-    {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/sadikur-rahman1/',
-      color: 'hover:text-blue-600'
     }
   ];
 
@@ -158,7 +146,7 @@ const ContactSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact form */}
-          <div className={cn(
+          {/* <div className={cn(
             "p-8 rounded-3xl shadow-soft paper-texture bg-card border border-border/50",
             isVisible && "animate-organic-entrance"
           )} style={{ animationDelay: '0.4s' }}>
@@ -170,7 +158,7 @@ const ContactSection = () => {
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name field */}
+    
               <div className="relative">
                 <label 
                   htmlFor="name"
@@ -199,7 +187,7 @@ const ContactSection = () => {
                 />
               </div>
 
-              {/* Email field */}
+
               <div className="relative">
                 <label 
                   htmlFor="email"
@@ -228,7 +216,6 @@ const ContactSection = () => {
                 />
               </div>
 
-              {/* Subject field */}
               <div className="relative">
                 <label 
                   htmlFor="subject"
@@ -257,7 +244,6 @@ const ContactSection = () => {
                 />
               </div>
 
-              {/* Message field */}
               <div className="relative">
                 <label 
                   htmlFor="message"
@@ -286,7 +272,6 @@ const ContactSection = () => {
                 />
               </div>
 
-              {/* Submit button */}
               <button
                 type="submit"
                 disabled={!isFormValid || isSubmitting}
@@ -312,16 +297,11 @@ const ContactSection = () => {
                   )}
                 </span>
 
-                {/* Ripple effect */}
                 <div className="absolute inset-0 bg-white/10 scale-0 rounded-2xl transition-transform duration-300 group-hover:scale-100" />
               </button>
             </form>
-          </div>
-
-          {/* Contact information */}
-          <div className="space-y-8">
-            {/* Contact methods */}
-            <div className={cn(
+          </div> */}
+                      <div className={cn(
               "p-8 rounded-3xl shadow-soft paper-texture bg-card border border-border/50",
               isVisible && "animate-organic-entrance"
             )} style={{ animationDelay: '0.6s' }}>
@@ -359,42 +339,16 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Social links */}
-            <div className={cn(
-              "p-8 rounded-3xl shadow-soft paper-texture bg-card border border-border/50",
-              isVisible && "animate-organic-entrance"
-            )} style={{ animationDelay: '0.8s' }}>
-              <h3 className="text-2xl font-semibold text-foreground mb-6">Connect With Me</h3>
-              
-              <div className="grid grid-cols-2 gap-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={cn(
-                      "group flex items-center gap-3 p-4 rounded-2xl transition-all duration-300",
-                      "hover:bg-accent/10 hover-lift border border-border/50 hover:border-primary/50",
-                      social.color
-                    )}
-                  >
-                    <social.icon className="w-6 h-6 text-muted-foreground group-hover:scale-110 transition-transform duration-300" />
-                    <span className="font-medium text-foreground">{social.label}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
+          {/* Contact information */}
+          <div className="space-y-8">
+            {/* Contact methods */}
 
             {/* Personal note */}
             <div className={cn(
-              "p-8 rounded-3xl bg-gradient-sage shadow-medium border border-primary/20",
+              "p-8 rounded-3xl shadow-soft paper-texture bg-card border border-border/50",
               isVisible && "animate-organic-entrance"
-            )} style={{ animationDelay: '1s' }}>
-              <div className="flex items-center gap-3 mb-4">
-                <Heart className="w-6 h-6 text-primary animate-pulse-gentle" />
-                <h3 className="text-xl font-semibold text-card-foreground">A Personal Note</h3>
-              </div>
+            )} style={{ animationDelay: '0.6s' }}>
+              <h3 className="text-2xl font-semibold text-foreground mb-6">A Personal Note</h3>
               
               <p className="text-card-foreground leading-relaxed">
                 I believe every project is an opportunity to create something meaningful. Whether you're a startup with a bold vision or an established company looking to innovate, I'm here to help bring your ideas to life with passion and precision.
@@ -403,19 +357,6 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Response time indicator */}
-        <div className={cn(
-          "mt-12 text-center p-6 rounded-2xl bg-card border border-border/50 shadow-soft",
-          isVisible && "animate-organic-entrance"
-        )} style={{ animationDelay: '1.2s' }}>
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <CheckCircle className="w-5 h-5 text-primary" />
-            <span className="font-medium text-foreground">Quick Response Guaranteed</span>
-          </div>
-          <p className="text-muted-foreground">
-            I typically respond to all inquiries within 24 hours. For urgent matters, feel free to call or reach out on social media.
-          </p>
-        </div>
       </div>
     </section>
   );

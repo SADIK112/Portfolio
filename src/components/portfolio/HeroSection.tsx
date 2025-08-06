@@ -2,6 +2,11 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { cn } from '@/lib/utils';
 import { Sparkles, Code, Heart, Zap, Mouse } from 'lucide-react';
 import profileAvatar from '@/assets/profile-avatar.jpg';
+import { 
+  Github,
+  Linkedin,
+  Youtube
+} from 'lucide-react';
 
 const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -21,8 +26,28 @@ const HeroSection = () => {
     'Problem Solver'
   ];
 
+  const socialLinks = [
+    {
+      icon: Github,
+      label: 'GitHub',
+      href: 'https://github.com/SADIK112',
+      color: 'hover:text-foreground'
+    },
+    {
+      icon: Linkedin,
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/sadikur-rahman1/',
+      color: 'hover:text-blue-600'
+    },
+    {
+      icon: Youtube,
+      label: 'Youtube',
+      href: 'https://www.youtube.com/@SADIKURRAHMAN-001',
+      color: 'hover:text-red-600'
+    }
+  ];
+
   const nameLetters = "SADIKUR RAHMAN".split('');
-  const interactiveWords = ['creative', 'innovative', 'passionate', 'dedicated'];
 
   // Mouse tracking for interactive effects
   useEffect(() => {
@@ -234,28 +259,23 @@ I’m a full-stack developer at Bevy Commerce, passionate about building web app
 </p>
 
                 {/* Floating action buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button 
-                    className="group relative px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium transition-all duration-300 hover-lift overflow-hidden"
-                    onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    <span className="relative z-10 flex items-center gap-2">
-                      <Code className="w-4 h-4" />
-                      View My Work
-                    </span>
-                    <div className="absolute inset-0 bg-white/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300" />
-                  </button>
-                  
-                  <button 
-                    className="group relative px-8 py-4 bg-transparent border-2 border-primary text-primary rounded-full font-medium transition-all duration-300 hover-lift hover:bg-primary hover:text-primary-foreground overflow-hidden"
-                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    <span className="relative z-10 flex items-center gap-2">
-                      <Heart className="w-4 h-4" />
-                      Get In Touch
-                    </span>
-                    <div className="absolute inset-0 bg-primary/5 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300" />
-                  </button>
+                <div className="grid grid-cols-3 gap-4">
+                  {socialLinks.map((social) => (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={cn(
+                        "group flex items-center gap-3 p-4 rounded-2xl transition-all duration-300",
+                        "hover:bg-accent/10 hover-lift border border-border/50 hover:border-primary/50",
+                        social.color
+                      )}
+                    >
+                      <social.icon className="w-6 h-6 text-muted-foreground group-hover:scale-110 transition-transform duration-300" />
+                      <span className="font-medium text-foreground">{social.label}</span>
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>

@@ -378,7 +378,7 @@ const ExperienceSection = () => {
 
         {/* Career summary */}
         <div className={cn(
-          "mt-20 text-center p-8 rounded-3xl bg-gradient-sage shadow-medium border border-primary/20",
+          "mt-20 text-center p-8 rounded-3xl shadow-medium border border-primary/20",
           isVisible && "animate-organic-entrance"
         )} style={{ animationDelay: '1.5s' }}>
           <div className="flex justify-center gap-8 mb-6">
@@ -387,7 +387,7 @@ const ExperienceSection = () => {
               <div className="text-sm text-card-foreground">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-1">50+</div>
+              <div className="text-3xl font-bold text-primary mb-1">20+</div>
               <div className="text-sm text-card-foreground">Projects Completed</div>
             </div>
             <div className="text-center">

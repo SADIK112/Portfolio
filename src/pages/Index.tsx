@@ -40,7 +40,7 @@ const Index = () => {
       <footer className="py-8 px-6 bg-card border-t border-border/50">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground mb-4">
-            Crafted with care and attention to detail • Built with React, TypeScript & Tailwind CSS
+            Made by @Sadikur Rahman • Built with React, TypeScript & Tailwind CSS
           </p>
           <div className="flex justify-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse-gentle" />
