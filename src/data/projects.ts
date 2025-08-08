@@ -280,9 +280,9 @@ export const projects: Project[] = [
     title: 'Shopify Product Export App',
     description: 'Location-based low inventory product export tool for Shopify',
     longDescription: 'A Remix-based Shopify app that enables store owners to efficiently manage inventory across multiple locations. The app allows users to export products with low stock levels from specific store locations to CSV files, helping businesses maintain optimal inventory levels and streamline their restocking processes.',
-    image: '/src/assets/export-app/1.png',
+    image: '/projects/export-app/1.png',
     images: [
-      '/src/assets/export-app/1.png'
+      '/projects/export-app/1.png'
     ],
     tech: ['Shopify', 'Remix', 'React', 'GraphQL', 'TypeScript', 'Shopify Polaris'],
     featured: true,
@@ -307,9 +307,9 @@ export const projects: Project[] = [
     title: 'Dynamic Campaign Creator',
     description: 'Advanced campaign design and automation platform with canvas-based editor',
     longDescription: 'A comprehensive campaign creation platform that revolutionizes digital marketing workflows. This powerful tool enables users to design, automate, and deploy sophisticated marketing campaigns across multiple channels. Featuring an intuitive canvas-based interface, users can drag-and-drop elements, create automation workflows, and preview campaigns in real-time before deploying them to various websites and platforms.',
-    image: '/src/assets/bevy-design/1.png',
+    image: '/projects/bevy-design/1.png',
     images: [
-      '/src/assets/bevy-design/1.png'
+      '/projects/bevy-design/1.png'
     ],
     tech: ['React', 'TypeScript', 'Fabric.js', 'Node.js', 'MongoDB', 'WebSockets', 'AWS'],
     featured: true,
