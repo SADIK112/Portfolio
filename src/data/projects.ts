@@ -328,5 +328,28 @@ export const projects: Project[] = [
     isPrivate: true,
     challenge: 'Creating a flexible and intuitive campaign builder that simplifies complex marketing automation while providing powerful customization options for professional marketers and designers.',
     solution: 'Designed and developed a comprehensive campaign creation suite featuring a canvas-based editor, extensive component library, and seamless integration with various marketing platforms, enabling users to create professional campaigns without coding knowledge.'
+  },
+  {
+    id: 'ai-resume-matcher',
+    title: 'AI Resume Matcher',
+    description: 'AI-powered resume matching system that analyzes job descriptions and candidate resumes',
+    longDescription: 'AI Resume Matcher is an intelligent system that helps job seekers optimize their resumes for specific job postings. The application uses natural language processing to analyze job descriptions and compare them with uploaded resumes, providing a detailed match percentage and specific feedback on matching and non-matching skills and experiences.',
+    image: '/projects/ai-resume-matcher/1.png',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Open AI API', "Shadcn UI", 'Vercel', "Redux"],
+    liveUrl: 'https://ai-resume-matcher-ec6y.vercel.app/',
+    featured: true,
+    category: 'machinelearning',
+    role: 'Full-stack Developer & ML Engineer',
+    date: '2024',
+    features: [
+      'AI-powered resume analysis against job descriptions',
+      'Detailed match percentage and scoring',
+      'Identifies matching and non-matching skills/experiences',
+      'Supports PDF and DOCX file uploads',
+      'User-friendly interface with clear visual feedback',
+      'Secure document processing'
+    ],
+    challenge: 'Job seekers often struggle to tailor their resumes for specific job postings, leading to lower application success rates.',
+    solution: 'The AI Resume Matcher provides instant feedback on how well a resume matches a specific job description, highlighting areas of strength and suggesting improvements to increase the chances of getting noticed by recruiters.'
   }
 ];
