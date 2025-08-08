@@ -24,11 +24,11 @@ export const projects: Project[] = [
     title: 'Fractional Product Quantities for POS',
     description: 'Sell products with fractional quantities in Shopify POS',
     longDescription: 'Fractional Product Quantities allows merchants to sell products with fractional quantities in POS. Selling products with fractional quantities inside Shopify POS has been a challenge until now! With this app, you can easily select a single product/variant or multiple products/variants within the POS. Specify the fractional quantity or amount of each selected product/variant that you want to sell. Add those products/variants and their specified fractional quantities to the POS cart. Then proceed to checkout your customer. The app automatically syncs and adjusts your inventory accurately!',
-    image: '/src/assets/fractional-quantities-app/1.jpg',
+    image: '/projects/fractional-quantities-app/1.jpg',
     images: [
-      '/src/assets/fractional-quantities-app/1.jpg',
-      '/src/assets/fractional-quantities-app/2.jpg',
-      '/src/assets/fractional-quantities-app/3.jpg'
+      '/projects/fractional-quantities-app/1.jpg',
+      '/projects/fractional-quantities-app/2.jpg',
+      '/projects/fractional-quantities-app/3.jpg'
     ],
     tech: ['Shopify', 'React', 'Node.js', 'GraphQL', 'MongoDB', 'Docker', 'Kubernetes'],
     liveUrl: 'https://apps.shopify.com/pos-fractional-quantities',
@@ -50,14 +50,14 @@ export const projects: Project[] = [
     title: 'Credit & Charge Accounts for POS',
     description: 'Enable customers to purchase on account and pay later within Shopify POS',
     longDescription: 'Credit & Charge Accounts lets customers purchase products on account and pay them later within POS. Enhance your customer service by offering Credit & Charge Accounts inside Shopify POS. Now, you can give customers the ability to purchase items by putting purchases on their tab and charging it to their account. Customers can then make payments on their balances as required (e.g. weekly, bi-weekly, monthly, net-45, or custom).',
-    image: '/src/assets/credit-charge-app/1.jpg',
+    image: '/projects/credit-charge-app/1.jpg',
     images: [
-      '/src/assets/credit-charge-app/1.jpg',
-      '/src/assets/credit-charge-app/2.jpg',
-      '/src/assets/credit-charge-app/3.jpg',
-      '/src/assets/credit-charge-app/4.jpg',
-      '/src/assets/credit-charge-app/5.jpg',
-      '/src/assets/credit-charge-app/6.jpg'
+      '/projects/credit-charge-app/1.jpg',
+      '/projects/credit-charge-app/2.jpg',
+      '/projects/credit-charge-app/3.jpg',
+      '/projects/credit-charge-app/4.jpg',
+      '/projects/credit-charge-app/5.jpg',
+      '/projects/credit-charge-app/6.jpg'
     ],
     tech: ['Shopify', 'React', 'Node.js', 'GraphQL', 'MongoDB', 'Docker', 'QuickBooks'],
     liveUrl: 'https://apps.shopify.com/credit-charge-account-on-pos',
@@ -79,14 +79,14 @@ export const projects: Project[] = [
     title: 'Draft & Custom Orders for POS',
     description: 'Create & manage draft & custom orders within your POS device',
     longDescription: 'Draft & Custom Orders is an app for creating & managing draft & custom orders within your POS device. Using Draft Orders inside the Shopify POS has been a challenge until now! Easily create or add any draft or custom order, its line items, discounts, and respective customer info directly to your Shopify POS cart. Search through draft/custom orders, edit statuses, and add them to your Shopify POS cart. After checkout, the draft is automatically deleted.',
-    image: '/src/assets/draft-order/1.jpg',
+    image: '/projects/draft-order/1.jpg',
     images: [
-      '/src/assets/draft-order/1.jpg',
-      '/src/assets/draft-order/2.jpg',
-      '/src/assets/draft-order/3.jpg',
-      '/src/assets/draft-order/4.jpg',
-      '/src/assets/draft-order/5.jpg',
-      '/src/assets/draft-order/6.jpg'
+      '/projects/draft-order/1.jpg',
+      '/projects/draft-order/2.jpg',
+      '/projects/draft-order/3.jpg',
+      '/projects/draft-order/4.jpg',
+      '/projects/draft-order/5.jpg',
+      '/projects/draft-order/6.jpg'
     ],
     tech: ['Shopify', 'React', 'Node.js', 'GraphQL', 'MongoDB', 'Docker', 'Redis'],
     liveUrl: 'https://apps.shopify.com/draft-and-custom-orders-for-pos',
@@ -108,11 +108,11 @@ export const projects: Project[] = [
     title: 'Uniswap Wallet POS Integration',
     description: 'Seamless crypto payments for Shopify POS with Uniswap Wallet',
     longDescription: 'Integrated Uniswap Wallet with Shopify POS to enable seamless crypto payments in physical retail environments. The solution simplifies the payment flow, allowing customers to pay with their preferred tokens while providing merchants with a familiar POS experience. The system supports auto-confirmation for small transactions, L2 token support, and a streamlined cashier workflow for both crypto and traditional payments.',
-    image: '/src/assets/uniswap/1.png',
+    image: '/projects/uniswap/1.png',
     images: [
-      '/src/assets/uniswap/1.png',
-      '/src/assets/uniswap/2.png',
-      '/src/assets/uniswap/3.png'
+      '/projects/uniswap/1.png',
+      '/projects/uniswap/2.png',
+      '/projects/uniswap/3.png'
     ],
     tech: ['Shopify', 'React', 'Node.js', 'Ethereum', 'Web3.js', 'GraphQL', 'Docker'],
     featured: true,
@@ -137,12 +137,12 @@ export const projects: Project[] = [
     title: 'Coinbase NFT Event Access Control',
     description: 'Event access control system using Coinbase Wallet and NFTs',
     longDescription: 'Developed an event access control system that verifies NFT ownership for event entry. The system includes an iPad interface for event staff to scan attendee wallets, verify NFT ownership, and log attendance in real-time to a Google Sheet. The solution streamlines event check-ins while maintaining a secure and verifiable guest list.',
-    image: '/src/assets/coinbase/1.png',
+    image: '/projects/coinbase-nft-drop/1.png',
     images: [
-      '/src/assets/coinbase/1.png',
-      '/src/assets/coinbase/2.png',
-      '/src/assets/coinbase/3.png',
-      '/src/assets/coinbase/4.png'
+      '/projects/coinbase-nft-drop/1.png',
+      '/projects/coinbase-nft-drop/2.png',
+      '/projects/coinbase-nft-drop/3.png',
+      '/projects/coinbase-nft-drop/4.png'
     ],
     tech: ['React', 'Node.js', 'Ethereum', 'Web3.js', 'Google Sheets API', 'Coinbase Wallet SDK'],
     featured: true,
@@ -167,11 +167,11 @@ export const projects: Project[] = [
     title: 'UpScribe: Advanced Subscription Management',
     description: 'Powerful subscription management solution for Shopify merchants',
     longDescription: 'UpScribe is a comprehensive subscription management platform designed specifically for Shopify stores. It enables merchants to offer flexible subscription options, manage recurring billing, and provide customers with self-service account management. The solution includes advanced features like one-time purchases, subscription bundles, and customizable delivery schedules to enhance customer retention and increase average order value.',
-    image: '/src/assets/upscribe/1.png',
+    image: '/projects/upscribe/1.png',
     images: [
-      '/src/assets/upscribe/1.png',
-      '/src/assets/upscribe/2.png',
-      '/src/assets/upscribe/3.png'
+      '/projects/upscribe/1.png',
+      '/projects/upscribe/2.png',
+      '/projects/upscribe/3.png'
     ],
     tech: ['Shopify', 'React', 'Node.js', 'GraphQL', 'Liquid', 'Redis', 'Docker'],
     featured: true,
@@ -196,11 +196,11 @@ export const projects: Project[] = [
     title: 'KraPopolis: Web3 E-commerce Platform',
     description: 'NFT marketplace with direct crypto payments and multi-wallet support',
     longDescription: 'KraPopolis is a cutting-edge Shopify store integrated with Web3 capabilities, allowing users to purchase and mint NFTs directly from the storefront. The platform supports multiple wallet connections including MetaMask, Coinbase Wallet, and WalletConnect, providing a seamless bridge between traditional e-commerce and blockchain technology. Users can browse NFT collections, connect their preferred wallet, and complete purchases using various cryptocurrencies.',
-    image: '/src/assets/krapopolis/1.png',
+    image: '/projects/krapopolis/1.png',
     images: [
-      '/src/assets/krapopolis/1.png',
-      '/src/assets/krapopolis/2.png',
-      '/src/assets/krapopolis/3.png'
+      '/projects/krapopolis/1.png',
+      '/projects/krapopolis/2.png',
+      '/projects/krapopolis/3.png'
     ],
     tech: ['Shopify', 'React', 'Solidity', 'Web3.js', 'Ethereum', 'IPFS', 'Node.js'],
     featured: true,
@@ -225,10 +225,10 @@ export const projects: Project[] = [
     title: 'EMedals: Premium Auction Platform',
     description: 'Exclusive online auction platform for rare collectibles and medals',
     longDescription: 'EMedals is a high-end auction platform specializing in rare collectibles, medals, and historical artifacts. The platform features a real-time bidding system with countdown timers, automatic bid increments, and instant notifications. Users can track auction status (upcoming, live, ended), view bid history, and receive alerts when they\'re outbid. The system includes secure payment processing and escrow services for high-value transactions.',
-    image: '/src/assets/emedals/1.png',
+    image: '/projects/emedals/1.png',
     images: [
-      '/src/assets/emedals/1.png',
-      '/src/assets/emedals/2.png'
+      '/projects/emedals/1.png',
+      '/projects/emedals/2.png'
     ],
     tech: ['React', 'Node.js', 'WebSocket', 'MongoDB', 'Express', 'Stripe', 'AWS'],
     featured: true,
@@ -253,9 +253,9 @@ export const projects: Project[] = [
     title: 'Smart Discount Engine for Shopify',
     description: 'Advanced discount management system that intelligently applies the best possible discount combinations',
     longDescription: 'A sophisticated Shopify app that automatically applies the most beneficial discount combinations across multiple discount types while respecting Shopify\'s "one discount per item" rule. The system intelligently evaluates cart items, detects eligible discounts, and applies them in the most advantageous way possible, ensuring maximum customer savings without violating platform limitations.',
-    image: '/src/assets/smart-discount/1.png',
+    image: '/projects/smart-discount/1.png',
     images: [
-      '/src/assets/smart-discount/1.png'
+      '/projects/smart-discount/1.png'
     ],
     tech: ['Shopify', 'React', 'Node.js', 'GraphQL', 'MongoDB', 'Redis', 'Docker'],
     featured: true,
