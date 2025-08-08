@@ -137,12 +137,12 @@ export const projects: Project[] = [
     title: 'Coinbase NFT Event Access Control',
     description: 'Event access control system using Coinbase Wallet and NFTs',
     longDescription: 'Developed an event access control system that verifies NFT ownership for event entry. The system includes an iPad interface for event staff to scan attendee wallets, verify NFT ownership, and log attendance in real-time to a Google Sheet. The solution streamlines event check-ins while maintaining a secure and verifiable guest list.',
-    image: '/projects/coinbase-nft-drop/1.png',
+    image: '/projects/coinbase/1.png',
     images: [
-      '/projects/coinbase-nft-drop/1.png',
-      '/projects/coinbase-nft-drop/2.png',
-      '/projects/coinbase-nft-drop/3.png',
-      '/projects/coinbase-nft-drop/4.png'
+      '/projects/coinbase/1.png',
+      '/projects/coinbase/2.png',
+      '/projects/coinbase/3.png',
+      '/projects/coinbase/4.png'
     ],
     tech: ['React', 'Node.js', 'Ethereum', 'Web3.js', 'Google Sheets API', 'Coinbase Wallet SDK'],
     featured: true,
