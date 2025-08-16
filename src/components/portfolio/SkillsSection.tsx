@@ -31,18 +31,6 @@ const SkillsSection = () => {
 
   const skillCategories: SkillCategory[] = [
     {
-      id: 'data-science',
-      title: 'Data Science & Analytics',
-      icon: CpuIcon,
-      color: 'text-pink-500',
-      skills: [
-        'Data Analysis', 'SQL', 'PostgreSQL', 'Tableau', 'Python', 'Pandas', 
-        'NumPy', 'Data Visualization', 'Business Intelligence', 
-        'Statistical Analysis', 'Neural Network', "LLM API", "Sklearn", "Pytorch",
-        'Predictive Modeling', 'Data Mining', 'Machine Learning'
-      ]
-    },
-    {
       id: 'web-dev',
       title: 'Web Development',
       icon: Code,
@@ -63,6 +51,18 @@ const SkillsSection = () => {
         'Liquid Templating', 'POS Extensions', 'Shopify APIs (REST & GraphQL)',
         'Shopify App Development', 'Shopify CLI', 'Shopify Polaris',
         'Storefront Customization', 'Theme Development'
+      ]
+    },
+    {
+      id: 'data-science',
+      title: 'Data Science & Analytics',
+      icon: CpuIcon,
+      color: 'text-pink-500',
+      skills: [
+        'Data Analysis', 'SQL', 'PostgreSQL', 'Tableau', 'Python', 'Pandas', 
+        'NumPy', 'Data Visualization', 'Business Intelligence', 
+        'Statistical Analysis', 'Neural Network', "LLM API", "Sklearn", "Pytorch",
+        'Predictive Modeling', 'Data Mining', 'Machine Learning'
       ]
     },
     {
