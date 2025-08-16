@@ -62,7 +62,7 @@ const SkillsSection = () => {
         'Data Analysis', 'SQL', 'PostgreSQL', 'Tableau', 'Python', 'Pandas', 
         'NumPy', 'Data Visualization', 'Business Intelligence', 
         'Statistical Analysis', 'Neural Network', "LLM API", "Sklearn", "Pytorch",
-        'Predictive Modeling', 'Data Mining', 'Machine Learning'
+        'Predictive Modeling', 'Data Mining', 'Machine Learning', 'Tableau'
       ]
     },
     {
