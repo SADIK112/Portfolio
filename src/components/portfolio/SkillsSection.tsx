@@ -31,6 +31,18 @@ const SkillsSection = () => {
 
   const skillCategories: SkillCategory[] = [
     {
+      id: 'data-science',
+      title: 'Data Science & Analytics',
+      icon: CpuIcon,
+      color: 'text-pink-500',
+      skills: [
+        'Data Analysis', 'SQL', 'Tableau', 'Python', 'Pandas', 
+        'NumPy', 'Data Visualization', 'Business Intelligence', 
+        'ETL', 'Data Warehousing', 'Statistical Analysis',
+        'Predictive Modeling', 'Data Mining', 'Machine Learning'
+      ]
+    },
+    {
       id: 'web-dev',
       title: 'Web Development',
       icon: Code,
@@ -62,15 +74,6 @@ const SkillsSection = () => {
         'Agile', 'AWS Queue', 'AWS Services', 'CI/CD Pipelines',
         'Docker', 'Git', 'GitHub Actions', 'Heroku',
         'MongoDB', 'PostgreSQL', 'SQL'
-      ]
-    },
-    {
-      id: 'languages',
-      title: 'Languages',
-      icon: Languages,
-      color: 'text-amber-500',
-      skills: [
-        'C++', 'JavaScript', 'Python', 'PHP'
       ]
     }
   ];
@@ -139,9 +142,10 @@ const SkillsSection = () => {
                 isVisible && "animate-organic-entrance"
               )}
               style={{ 
-                animationDelay: `${category.id === 'web-dev' ? '0.1s' : 
-                              category.id === 'ecommerce' ? '0.3s' : 
-                              category.id === 'devops' ? '0.5s' : '0.7s'}` 
+                animationDelay: `${category.id === 'data-science' ? '0.1s' : 
+                              category.id === 'web-dev' ? '0.3s' : 
+                              category.id === 'ecommerce' ? '0.5s' : 
+                              category.id === 'devops' ? '0.7s' : '0.9s'}` 
               }}
             >
               <div className="flex items-center gap-3 mb-6">
