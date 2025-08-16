@@ -377,4 +377,32 @@ export const projects: Project[] = [
     challenge: 'Creating a price prediction model with MAPE < 20% using ensemble modeling techniques.',
     solution: 'Developed a price prediction model using ensemble modeling techniques with MAPE < 20% accuracy.',
   },
+  {
+    id: 'brazilian-ecommerce-insights',
+    title: 'Brazilian E-commerce Insights',
+    description: 'Comprehensive analysis of Brazilian e-commerce data with interactive visualizations',
+    longDescription: 'An in-depth data analysis project exploring Brazilian e-commerce data to uncover valuable business insights. The project includes interactive dashboards for sales analysis, customer behavior, and logistics performance. Key metrics such as revenue trends, order patterns, and delivery performance are visualized to help businesses make data-driven decisions.',
+    image: '/projects/brazilian-ecommerce-insights/1.png',
+    images: [
+      '/projects/brazilian-ecommerce-insights/1.png',
+      '/projects/brazilian-ecommerce-insights/2.png',
+      '/projects/brazilian-ecommerce-insights/3.png'
+    ],
+    tech: ['Tableau', 'Python', 'Pandas', 'Data Visualization', 'Business Intelligence'],
+    liveUrl: 'https://public.tableau.com/views/brazilian_ecommerce_dataset/ExecutiveSummary',
+    featured: true,
+    category: 'machinelearning',
+    role: 'Data Analyst',
+    date: '2024',
+    features: [
+      'Interactive dashboards for sales and product analysis',
+      'Comprehensive summary insights including revenue, orders, and customer metrics',
+      'Geospatial visualization of orders and revenue by state/city',
+      'Logistics and delivery performance analysis',
+      'Customer experience metrics and review analysis',
+      'Time-series analysis of sales and order trends'
+    ],
+    challenge: 'Analyzing a large e-commerce dataset to extract actionable business insights and present them in an accessible way.',
+    solution: 'Developed a comprehensive Tableau dashboard that transforms raw e-commerce data into clear, actionable insights, enabling data-driven decision making.'
+  },
 ];
