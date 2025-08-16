@@ -36,9 +36,9 @@ const SkillsSection = () => {
       icon: CpuIcon,
       color: 'text-pink-500',
       skills: [
-        'Data Analysis', 'SQL', 'Tableau', 'Python', 'Pandas', 
+        'Data Analysis', 'SQL', 'PostgreSQL', 'Tableau', 'Python', 'Pandas', 
         'NumPy', 'Data Visualization', 'Business Intelligence', 
-        'ETL', 'Data Warehousing', 'Statistical Analysis',
+        'Statistical Analysis', 'Neural Network', "LLM API", "Sklearn", "Pytorch",
         'Predictive Modeling', 'Data Mining', 'Machine Learning'
       ]
     },
@@ -71,7 +71,7 @@ const SkillsSection = () => {
       icon: Cloud,
       color: 'text-purple-500',
       skills: [
-        'Agile', 'AWS Queue', 'AWS Services', 'CI/CD Pipelines',
+        'Agile', 'AWS Queue', 'AWS Services', "AWS ECS", "AWS ECR", "S3", 'CI/CD Pipelines',
         'Docker', 'Git', 'GitHub Actions', 'Heroku',
         'MongoDB', 'PostgreSQL', 'SQL'
       ]
