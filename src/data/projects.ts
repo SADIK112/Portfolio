@@ -20,6 +20,31 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'airbnb-nyc',
+    title: 'Airbnb NYC Price Prediction',
+    description: 'A comprehensive data science project analyzing NYC Airbnb listings to build predictive models for optimal pricing with MAPE < 20%',
+    longDescription: 'End-to-end data science project that analyzes NYC Airbnb listings data to build and deploy a price prediction model with MAPE < 20%. The project includes data cleaning, exploratory data analysis, feature engineering, model training, and deployment of a production-ready API.',
+    tech: ['Machine Learning', 'Data Science', 'Python', 'Scikit-learn', 'Pandas', 'FastAPI', 'Docker', 'AWS/GCP', "AWS ECR", "AWS ECS", "UVICORN", "FARGATE"],
+    image: '/projects/airbnb-nyc/1.png',
+    images: [
+      '/projects/airbnb-nyc/1.png',
+      '/projects/airbnb-nyc/2.png',
+    ],
+    githubUrl: 'https://github.com/SADIK112/Airbnb-Data-Insights',
+    featured: true,
+    category: 'machinelearning',
+    features: [
+      'Achieved MAPE < 20% with ensemble modeling approach',
+      'Built a scalable prediction API with < 100ms response time',
+      'Implemented comprehensive data preprocessing and feature engineering pipeline',
+      'Deployed containerized application with 99.9% uptime'
+    ],
+    role: 'Data Scientist',
+    date: '2024',
+    challenge: 'Creating a price prediction model with MAPE < 20% using ensemble modeling techniques.',
+    solution: 'Developed a price prediction model using ensemble modeling techniques with MAPE < 20% accuracy.',
+  },
+  {
     id: 'fractional-product-quantities',
     title: 'Fractional Product Quantities for POS',
     description: 'Sell products with fractional quantities in Shopify POS',
