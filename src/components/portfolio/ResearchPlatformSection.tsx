@@ -151,8 +151,8 @@ const ResearchPlatformSection = () => {
 
         <div className="text-center">
           <p className="text-muted-foreground max-w-3xl mx-auto mb-8">
-            We're on a mission to transform the $4.7 trillion global education services market, 
-            starting with the $3B+ graduate research segment. Join us in revolutionizing 
+            I am on a mission to transform the $4.7 trillion global education services market, 
+            starting with the $3B+ graduate research segment. Join me in revolutionizing 
             academic discovery.
           </p>
           <button disabled className="px-8 py-3 bg-gradient-to-r from-primary to-accent text-white rounded-full font-medium hover:opacity-90 transition-opacity">

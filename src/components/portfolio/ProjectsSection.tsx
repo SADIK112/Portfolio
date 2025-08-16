@@ -166,7 +166,7 @@ const ProjectsSection = () => {
         {/* CTA */}
         <div className="mt-16 text-center">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/SADIK112"
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
