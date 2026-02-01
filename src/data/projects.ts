@@ -418,14 +418,16 @@ export const projects: Project[] = [
       '/projects/ai-pr-assistant/4.png'
     ],
     tech: [
-      'Python',
+      'NextJS',
+      'Prisma',
+      'Supabase',
+      'Pinecone',
+      'Octokit',
       'LangChain',
       'Vector Database',
       'OpenAI',
-      'LLMs',
       'Embeddings',
       'RAG',
-      'AI/NLP'
     ],
     liveUrl: 'https://ai-pr-reviewer-phi.vercel.app/', // add demo or repo link if available
     featured: true,
