@@ -14,7 +14,8 @@ import {
   GitBranchIcon,
   Code2,
   Boxes,
-  Terminal
+  Terminal,
+  Brain
 } from 'lucide-react';
 
 interface SkillCategory {
@@ -74,6 +75,23 @@ const SkillsSection = () => {
         'Agile', 'AWS Queue', 'AWS Services', "AWS ECS", "AWS ECR", "S3", 'CI/CD Pipelines',
         'Docker', 'Git', 'GitHub Actions', 'Heroku',
         'MongoDB', 'PostgreSQL', 'SQL'
+      ]
+    },
+    {
+      id: 'ai-gen',
+      title: 'AI & Generative AI',
+      icon: Brain,
+      color: 'text-indigo-500',
+      skills: [
+        'Large Language Models (LLMs)',
+        'Generative AI',
+        'Prompt Engineering',
+        'Retrieval-Augmented Generation (RAG)',
+        'LangChain',
+        'Vector Databases',
+        'Embeddings',
+        'Semantic Search',
+        'AI Agents',
       ]
     }
   ];
