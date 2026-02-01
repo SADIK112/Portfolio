@@ -405,4 +405,42 @@ export const projects: Project[] = [
     challenge: 'Analyzing a large e-commerce dataset to extract actionable business insights and present them in an accessible way.',
     solution: 'Developed a comprehensive Tableau dashboard that transforms raw e-commerce data into clear, actionable insights, enabling data-driven decision making.'
   },
+  {
+    id: 'ai-pr-assistant',
+    title: 'AI PR Assistant',
+    description: 'An AI-powered PR assistant for intelligent document retrieval, content generation, and contextual responses.',
+    longDescription: 'An AI-driven PR assistant designed to streamline public relations workflows using large language models and retrieval-augmented generation (RAG). The system leverages LangChain, vector databases, and OpenAI embeddings to provide accurate, context-aware responses from proprietary PR documents, press releases, and brand guidelines. It enables faster content creation, consistent messaging, and intelligent knowledge retrieval for PR teams.',
+    image: '/projects/ai-pr-assistant/1.png',
+    images: [
+      '/projects/ai-pr-assistant/1.png',
+      '/projects/ai-pr-assistant/2.png',
+      '/projects/ai-pr-assistant/3.png',
+      '/projects/ai-pr-assistant/4.png'
+    ],
+    tech: [
+      'Python',
+      'LangChain',
+      'Vector Database',
+      'OpenAI',
+      'LLMs',
+      'Embeddings',
+      'RAG',
+      'AI/NLP'
+    ],
+    liveUrl: 'https://ai-pr-reviewer-phi.vercel.app/', // add demo or repo link if available
+    featured: true,
+    category: 'machinelearning',
+    role: 'AI Engineer',
+    date: '2026',
+    features: [
+      'Retrieval-Augmented Generation (RAG) for accurate PR responses',
+      'Semantic search using vector embeddings',
+      'Context-aware Q&A over internal PR documents',
+      'Automated press release and content drafting',
+      'Consistent brand messaging enforcement',
+      'Scalable architecture using LLMs and vector databases'
+    ],
+    challenge: 'Ensuring accurate, context-aware responses from large volumes of unstructured PR documents while minimizing hallucinations.',
+    solution: 'Implemented a RAG-based architecture using LangChain, vector databases, and OpenAI embeddings to ground LLM responses in verified PR content, delivering reliable and efficient AI-assisted PR workflows.'
+  }
 ];
